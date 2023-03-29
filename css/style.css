@@ -36,7 +36,9 @@ ul{
 }
 .justify-content-between{
     justify-content: space-between;
-
+}
+.align-items-center{
+    align-items: center;
 }
 /*NAV BAR*/
 
@@ -79,6 +81,7 @@ ul{
     border-radius: 50px;
     opacity: 0;
     visibility: hidden ;
+    transition: all 0.3s ease-out;
 }
 
 .navbar .nav-item  .nav-link span::before{
@@ -97,14 +100,41 @@ ul{
     background-color: var(--white);
     left: 140%;
 }
-.navbar .nav-item > .nav-link.active,.navbar .nav-item:hover> .nav-link span{
+.navbar .nav-item > .nav-link.active span,.navbar .nav-item:hover> .nav-link span{
     opacity: 1;
     visibility: visible;
     width: 60%;
 
 }
-.navbar .nav-item > .nav-link.active,.navbar .nav-item:hover> .nav-link span::before{
-    
+.navbar .nav-item > .nav-link.active span::before,.navbar .nav-item:hover> .nav-link span::before{
+    width: 20%;
 }
+.navbar .nav-item > .nav-link.active span::after,.navbar .nav-item:hover> .nav-link span::after{
+    width: 15%;
+}
+/*HOME*/
+.home-section{
+    position: relative;
+    background-color: var(--black-100);
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 80px;
+}
+.home-section .home-text{
 
+}
+.home-section .home-image{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 25px;
+}
+.home-section .home-text h4{
+   font-size: 30px;
+   font-weight: 600;
+   letter-spacing: 4px;
+   color: var(--main-color);
 
+}
+.home-section .home-image{
+    background-color: palevioletred;
+}
