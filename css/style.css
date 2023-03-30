@@ -65,8 +65,14 @@ img{
     z-index: 999;
     width: 100%;
     padding: 25px;
+    transition: all 0.5s ease;
 }
-.navbar .logo{
+.navbar.sticky{
+    padding: 12px 25px;
+    background-color:var(--white);
+
+}
+.navbar .logo a{
     font-size: 24px;
     color: var(--black-900);
     font-weight: 600;
@@ -79,6 +85,9 @@ img{
     display: inline-block;
     position: relative;
     margin-left: 36px;
+}
+.navbar.sticky .menu .nav-item .nav-link{
+    color: var(--main-color);
 }
 .navbar .menu .nav-item .nav-link{
     color: var(--white);
@@ -136,6 +145,29 @@ img{
     z-index: 1;
     overflow-x: hidden;
     padding-top: 80px;
+}
+.header-social{
+    position: absolute;
+    top: 53%;
+    left: 50px;
+    transform: translateY(-53%);
+    border: 1px solid rgba(0,167,142,0.21);
+    border: radius 50px;
+}
+.header-social li a{
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    padding: 20px 15px;
+    color: rgba(100,111,135,0.58);
+}
+.header-social li a:hover{
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    padding: 20px 15px;
+    color: rgba(100,111,135,0.58);
+    transition: all 0.3s ease-out 0s;
 }
 .home-section .home-text{
     background-color: yellow;
