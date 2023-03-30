@@ -26,6 +26,9 @@ body{
 ul{
     list-style: none;
 }
+img{
+    vertical-align: middle;
+}
 .container{
     max-width: 1140px;
     margin: auto;
@@ -40,13 +43,27 @@ ul{
 .align-items-center{
     align-items: center;
 }
+.btn-1{
+    background-color: var(--main-color);
+    padding: 15px 40px;
+    border: none;
+    color: var(--white);
+    border-radius: 16px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: all 0.3s ease-out ;
+}
+.btn-1:hover{
+    color: var(--white);
+    background-color: rgba(0,167,142,0.7);
+}
 /*NAV BAR*/
 
 .navbar{
     position: fixed;
     z-index: 999;
     width: 100%;
-    background-color: crimson;
     padding: 25px;
 }
 .navbar .logo{
@@ -121,7 +138,11 @@ ul{
     padding-top: 80px;
 }
 .home-section .home-text{
+    background-color: yellow;
 
+}
+.home-section .home-image{
+    background-color: red
 }
 .home-section .home-image{
     flex: 0 0 50%;
@@ -135,6 +156,50 @@ ul{
    color: var(--main-color);
 
 }
-.home-section .home-image{
-    background-color: palevioletred;
+.home-section .home-text h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 15px;
+    color: var(--black-900);
+}
+.home-section .home-text span{
+    font-size: 18 px;
+    line-height: 28px;
+    color: var(--black-900);
+    font-weight: 500;
+    display: block;
+    margin-top: 15px;
+}
+.home-section .home-text p{
+    font-size:16px;
+    color: var(--black-400);
+    font-weight: 24px;
+    margin-top: 15px;
+}
+.home-section .home-text .btn{
+    display: inline-block;
+    margin-top: 15px;
+}
+.home-section .home-image .img-box img{
+    position: relative;
+    width: 100%;
+    z-index: 789;
+}
+.header-hero-shape{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+.header-hero-shape::before{
+    position: absolute;
+    content: '';
+    width: 1000%;
+    height: 100%;
+    background-color: var(--main-color);
+    transform: skewX(20deg);
+    top: 0;
+    left: 0;
+
 }
