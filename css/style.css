@@ -61,6 +61,37 @@ img{
 .section-padding{
     padding: 80px 0;
 }
+.section-title{
+    margin-bottom: 30px;
+}
+.section-title .sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.section-title .main-title{
+   font-size: 35px;
+   font-weight: 600;
+   margin-top: 10px; 
+}
+.section-title .line{
+    padding: 0px;
+}
+.section-title .line li{
+    display: inline-block;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    height:3px ;
+}
+.section-title .line li:ntn-of-type(1){
+    width: 64px;
+}
+.section-title .line li:ntn-of-type(2){
+    width: 20px;
+}
+.section-title .line li:ntn-of-type(3){
+    width: 7px;
+}
 /*NAV BAR*/
 
 .navbar{
@@ -146,6 +177,7 @@ img{
     width: 15%;
 }
 /*HOME*/
+
 .home-section{
     position: relative;
     background-color: var(--black-100);
@@ -176,26 +208,21 @@ img{
     color: rgba(100,111,135,0.58);
     transition: all 0.3s ease-out 0s;
 }
-.home-section .home-text{
-    background-color: yellow;
-
-}
-.home-section .home-image{
-    background-color: red
-}
-.home-section .home-image{
+.home-section .home-text, 
+.home-section .home-image
+{
     flex: 0 0 50%;
     max-width: 50%;
     padding: 0 25px;
-}
+} 
 .home-section .home-text h4{
-   font-size: 30px;
-   font-weight: 600;
-   letter-spacing: 4px;
-   color: var(--main-color);
-
-}
-.home-section .home-text h1{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: var(--main-color);
+ 
+ }
+ .home-section .home-text h1{
     font-size: 50px;
     font-weight: 700;
     margin-top: 15px;
@@ -219,6 +246,9 @@ img{
     display: inline-block;
     margin-top: 15px;
 }
+.home-section .home-image{
+    background-color: rgb(1, 12, 17);
+}
 .home-section .home-image .img-box img{
     position: relative;
     width: 100%;
@@ -241,6 +271,7 @@ img{
     top: 0;
     left: 0;
 }
+
 /* ABOUT */
 .about-section .about-image,
 .about-section .about-content{
@@ -249,7 +280,7 @@ img{
     padding: 20px;
 }
 .about-section .about-image .img-box{
-    position:relative;
+   position: relative;
 }
 .about-section .about-image .img-box img{
     max-width: 100%;
@@ -270,7 +301,7 @@ img{
     position: absolute;
     content: '';
     width: 15px;
-    height:85%;
+    height: 85%;
     background-color: var(--main-color);
     bottom: 0;
     right: 0;
@@ -284,8 +315,24 @@ img{
     top: 36px;
     right: -2px;
     transform: rotate(11deg);
-    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
-.about-section .about-content{
-    background-color: palevioletred;
+.about-section .about-content p{
+   text-align: justify;
+
 }
+.skill-item .skill.header {
+    position: relative;
+}
+.skill-item .skill.header .skill-title{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.skill-item .skill.header .skill-percentage {
+    position: absolute;
+    top: -3px;
+    right: 0;
+}
+
+
