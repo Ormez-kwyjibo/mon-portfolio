@@ -61,7 +61,12 @@ img{
 .section-padding{
     padding: 80px 0;
 }
+.text-align{
+    text-align: center;
+}
 .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-bottom: 30px;
 }
 .section-title .sub-title{
@@ -355,7 +360,8 @@ img{
     height: 9px;
     border-radius: 5px;
     background-color: var(--main-color);
-    width: 80%; 
+    width: 0%; 
+    transition: 2s ease-out;
 }
 .skill-item .skill-bar .bar-inner .progress-line::before{
     position: absolute;
@@ -366,7 +372,9 @@ img{
     top: -7px;
     right: 0;
 }
-.skill-item .skill-bar .bar-inner .progress-line::after{
-    
+/* SERVICES  SECTION */
 
+.service-section{
+    min-height: 100vh;
+    background-color: var(--black-100);
 }
