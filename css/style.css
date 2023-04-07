@@ -378,3 +378,95 @@ img{
     min-height: 100vh;
     background-color: var(--black-100);
 }
+.service-section .service-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-section .service-item-inner{
+    box-shadow: var(--shadow-black-100);
+    padding: 50px 15px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.service-section .service-item-inner:hover{
+    background-color: var(--main-color);
+}
+.service-section .service-item-inner .icon{
+    height: 60px;
+    width: 60px;
+    background-color: var(--main-color);
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 28px;
+    color: var(--white);
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+.service-section .service-item-inner:hover .icon{
+    background-color: var(--white);
+    color: var(--main-color);
+    font-size: 24px;
+}
+
+.service-section .service-item-inner .icon i{
+    line-height: 60px;
+}
+.service-section .service-item-inner h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black-900);
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+.service-section .service-item-inner:hover h3{
+    color: var(--white);
+}
+.service-section .service-item-inner p{
+    font-size: 16px;
+    color: var(--black-400);
+    margin: 0; 
+    line-height: 26px;
+    transition: all 0.3s ease;
+}
+.service-section .service-item-inner:hover p{
+    color: var(--black-100);
+}
+/*=PORTFOLIO=*/
+.portfolio .portfolio-filter{
+    flex:  0 0 100%;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--main-color);
+}
+.portfolio .portfolio-filter button{
+    text-transform: uppercase;
+    margin-top: -20px;
+    outline: none;
+    border: 1px solid;
+    border-color: var(--main-color);
+    padding: 8px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: var(--white);
+    margin-right: 20px;
+    color: var(--main-color);
+}
+.portfolio .portfolio-filter button.active{
+    color: var(--white);
+    background-color: var(--main-color);
+}
+
+
+
+
+
