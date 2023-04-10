@@ -4,6 +4,46 @@ var navbar = document.querySelector(".navbar");
 window.onscroll = () =>{
     this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
+/* =NAV TOOGLER= */
+const navMenu = document.querySelector(".menu");
+      navToggle = document.querySelector(".menu-btn");
+      if(navToggle)
+      {
+        navToggle.addEventListener("click", () =>
+        {
+            navMenu.classList.toggle("aactive");        
+        })
+      }
+      /* =CLOSING menu when link is clicked= */
+      const navlink = document.querySelectorAll(".nav-link");
+      function linkAction()
+      {
+        const navMenu = document.querySelector(".menu");
+        navMenu.classList.remove("active")
+      }
+      navLink.forEach(n => n.addEventListener("click", linkAction))
+/* SCROLL SECTION ACTIVE LINK */
+      const Section=document.querySelectorAll('section[id]')
+      function scrollActive()
+      {
+        const scrollY = window.pageYOffset
+        Section.forEach(current => {
+            const sectionHeight = current.offsetHeigt
+            const sectionTop = current.offsetTop - 50;
+            sectionId = current.getAttribute('id')
+            if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
+            {
+                document.querySelector('.links a[href*=' + sectionId + ']').classList.add('active')
+            }
+            else
+            {
+                document.querySelector('.links a[href*=' + sectionId + ']').classList.removes('active')
+            }
+        })
+      }
+      window.addEventListener('scroll', scrollActive)
+
+
 /* =SKILLS ANIMANTION= */
 const skills_wrap = document.querySelector("about-skills"),
     skills_bar = document.querySelectorAll(".progress-line");
@@ -39,7 +79,7 @@ const skills_wrap = document.querySelector("about-skills"),
                     FilterContainer.querySelector(".active").classList.remove("active");
                     this.classList.add("active");
                     const filterValue = this.getAttribute("data-filter");
-                    for(let k=0; k<totalportfolioItem; k++; )
+                    for(let k=0; k< totalportfolioItem; k++; )
                     {
                         if(filterValue === PortfolioItems[k].getAttribute("data-category"))
                         {
@@ -118,6 +158,6 @@ const skills_wrap = document.querySelector("about-skills"),
                     {
                         toggleLightbox()
                     }
-                    
+
 
                   })
